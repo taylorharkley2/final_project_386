@@ -2,6 +2,9 @@
 #
 #   print(f"CUDA available? {torch.cuda.is_available()}")
 
+
+# TRANSCRIPTION WORKS
+
 import sounddevice as sd
 import numpy as np
 import numpy.typing as npt
@@ -74,3 +77,5 @@ if __name__ == "__main__":
     print(f"Transcription took {(end_time-start_time)/1000000000} seconds")
 
     # TO DO: initialize the file for a warm start but ONLY record audio if GPIO is high
+
+    # TO DO: Needs to pass the output text as a system argument to the prompt checkpoint (run the llm parse function used in "prompt_checkpoint")
